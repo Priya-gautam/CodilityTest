@@ -3,7 +3,7 @@ System Requirement:
 
 JDK 1.8 or above Maven 3.1 or above Intellij or IDE of choice.
 
-Config1.properties file should be updated for all keys; Notes have been added in file itself.
+Config1.properties file should be updated for all keys.
 
 Execution Steps Please follow the instructions to execute the tests on local:
 
