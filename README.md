@@ -11,4 +11,6 @@ Checkout the code from github Open terminal and navigate to the checkout directo
 
 Checkout the master branch and to find the runner class 'TestRunner.java', navigate to CodilityTest.src.test.java.CodilityTest.runners
 
+Also, Find testng.xml under src.test.resource.CodilityTest.testngxmls for execution
+
 Test results are captured as a screenshot "TestResults.png"
