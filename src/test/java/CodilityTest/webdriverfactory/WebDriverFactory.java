@@ -1,5 +1,6 @@
 package CodilityTest.webdriverfactory;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import org.openqa.selenium.PageLoadStrategy;
@@ -39,6 +40,11 @@ public class WebDriverFactory {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
 		ChromeOptions options = new ChromeOptions();
+
+		Map<String, Object> prefs = new HashMap<String, Object>();
+		prefs.put("network.cookie.cookieBehavior", 2);
+		options.setExperimentalOption("prefs", prefs);
+		
 		options.addArguments("--disable-web-security");
 		options.addArguments("enable-automation");
 		options.addArguments("--no-sandbox");

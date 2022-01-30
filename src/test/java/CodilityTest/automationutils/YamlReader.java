@@ -20,7 +20,6 @@ public class YamlReader {
 	public static String newFilePath = "";
 
 	/** The common file path. */
-	public static String commonFilePath = "";
 
 	/** The config settings. */
 	public static Map<String, String> configSettings = TestSessionInitiator._getSessionConfig();
@@ -39,18 +38,13 @@ public class YamlReader {
 	 */
 	public static String setYamlFilePath() {
 
-		commonFilePath = "src/test/resources/yamldata/Common_TestData.yml";
 		// String tier = TestSessionInitiator.configSettings.get("tier");
 		String tier = configSettings.get("tier");
 
-		if (tier.equalsIgnoreCase("dev")) {
-			yamlFilePath = "src/test/resources/yamldata/DEV_Testdata.yml";
-		} else if (tier.equalsIgnoreCase("QA")) {
-			yamlFilePath = "src/test/resources/yamldata/QA_Testdata.yml";
-		} else if (tier.equalsIgnoreCase("STAGE") || tier.equalsIgnoreCase("Stage") || tier.equalsIgnoreCase("stage")) {
-			yamlFilePath = "src/test/resources/yamldata/STAGE_Testdata.yml";
+		if (tier.equalsIgnoreCase("QA")) {
+			yamlFilePath = "src/test/resource/CodilityTest/yamldata/QA_Testdata.yml";
 		} else if (tier.equalsIgnoreCase("prod") || tier.equalsIgnoreCase("production")) {
-			yamlFilePath = "src/test/resources/yamldata/PROD_Testdata.yml";
+			yamlFilePath = "src/test/resource/CodilityTest/yamldata/PROD_Testdata.yml";
 		} else {
 			Reporter.log("YOU HAVE PROVIDED WRONG TIER IN CONFIG!!! using dev test data", true);
 		}
@@ -97,41 +91,16 @@ public class YamlReader {
 		Yaml yaml;
 		Map<String, Object> object;
 		try {
-			try {
-				doc = new FileReader(commonFilePath);
-			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			yaml = new Yaml();
-			object = (Map<String, Object>) yaml.load(doc);
-			return parseMap(object, token + ".");
-		} catch (NullPointerException e) {
-			try {
-				doc = new FileReader(yamlFilePath);
-			} catch (FileNotFoundException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
-			yaml = new Yaml();
-			object = (Map<String, Object>) yaml.load(doc);
-			return parseMap(object, token + ".");
+			doc = new FileReader(yamlFilePath);
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
 		}
-		/*
-		 * try { doc = new FileReader(yamlFilePath); } catch (FileNotFoundException ex)
-		 * { System.out.println( "File not valid or missing!!!"); ex.printStackTrace();
-		 * return null; } Yaml yaml = new Yaml(); // TODO: check the type casting of
-		 * object into the Map and create // instance in one place Map<String, Object>
-		 * object = (Map<String, Object>) yaml.load(doc);
-		 */
-		// return parseMap(object, token + ".");
-		/*
-		 * Map<String, Object> object = (Map<String, Object>) yaml.load(doc); return
-		 * parseMap(object, token + ".");
-		 */
-
+		yaml = new Yaml();
+		object = (Map<String, Object>) yaml.load(doc);
+		return parseMap(object, token + ".");
 	}
-
+	
 	/**
 	 * Gets the value.
 	 *
@@ -145,17 +114,10 @@ public class YamlReader {
 		Reader doc;
 		Yaml yaml;
 		Map<String, Object> object;
-		try {
-			doc = new FileReader(commonFilePath);
-			yaml = new Yaml();
-			object = (Map<String, Object>) yaml.load(doc);
-			return getMapValue(object, token);
-		} catch (NullPointerException e) {
-			doc = new FileReader(yamlFilePath);
-			yaml = new Yaml();
-			object = (Map<String, Object>) yaml.load(doc);
-			return getMapValue(object, token);
-		}
+		doc = new FileReader(yamlFilePath);
+		yaml = new Yaml();
+		object = (Map<String, Object>) yaml.load(doc);
+		return getMapValue(object, token);
 	}
 
 	/**

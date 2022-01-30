@@ -27,7 +27,7 @@ public class Hooks {
 
 	@After
 	public void closeBrowser(Scenario s) {
-		test.closeTestSession();
+//		test.closeTestSession();
 	}
 
 }

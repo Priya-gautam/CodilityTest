@@ -10,13 +10,13 @@ import java.util.ArrayList;
 public class ObjectFileReader {
 
 	static String tier;
-	static String filepath = "src/test/resources/PageObjectRepository/";
+	static String filepath = "src/test/resource/CodilityTest/pageObjects/";
 
 	public static String[] getElementFromFile(String pageName,
 			String elementName) {
 		setTier();
 		try {
-			FileReader specFile = new FileReader(filepath + tier + pageName + ".gspec");
+			FileReader specFile = new FileReader(filepath  + pageName + ".spec");
 			return getElement(specFile, elementName);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -26,7 +26,7 @@ public class ObjectFileReader {
 
 	public static String getSpecFilePath(String pageName){
 		setTier();
-		return filepath + tier + pageName + ".gspec";
+		return filepath + pageName + ".spec";
 	}
 
 	public static String getPageTitleFromFile(String pageName) {
@@ -34,8 +34,8 @@ public class ObjectFileReader {
 		BufferedReader br = null;
 		String returnElement = "";
 		try {
-			br = new BufferedReader(new FileReader(filepath + tier + pageName
-					+ ".gspec"));
+			br = new BufferedReader(new FileReader(filepath  + pageName
+					+ ".spec"));
 			String line = br.readLine();
 
 			while (line != null && !line.startsWith("========")) {

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Home Page: 'TESTSCRIPTDEMO – Automation Practice' is appearing]]>
+    </line>
+    <line>
+      <![CDATA[User click 'All Cookies' button]]>
+    </line>
+    <line>
+      <![CDATA[User click on 'Shop' menu option]]>
+    </line>
+    <line>
+      <![CDATA[Shop Page: 'Shop' is appearing]]>
+    </line>
+    <line>
+      <![CDATA[ASSERT PASSED: element div_wishListButton with text Bikini is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[User click on wishlist button for product: 'Bikini']]>
+    </line>
+    <line>
+      <![CDATA[ASSERT PASSED: element span_addedToWishListIcon with text Bikini is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[Bikini added to Wishlist]]>
+    </line>
+    <line>
+      <![CDATA[ASSERT PASSED: element div_wishListButton with text Black trousers is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[User click on wishlist button for product: 'Black trousers']]>
+    </line>
+    <line>
+      <![CDATA[ASSERT PASSED: element span_addedToWishListIcon with text Black trousers is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[Black trousers added to Wishlist]]>
+    </line>
+    <line>
+      <![CDATA[ASSERT PASSED: element div_wishListButton with text Evening trousers is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[User click on wishlist button for product: 'Evening trousers']]>
+    </line>
+    <line>
+      <![CDATA[ASSERT PASSED: element span_addedToWishListIcon with text Evening trousers is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[Evening trousers added to Wishlist]]>
+    </line>
+    <line>
+      <![CDATA[ASSERT PASSED: element div_wishListButton with text Modern is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[User click on wishlist button for product: 'Modern']]>
+    </line>
+    <line>
+      <![CDATA[ASSERT PASSED: element span_addedToWishListIcon with text Modern is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[Modern added to Wishlist]]>
+    </line>
+    <line>
+      <![CDATA[User click 'Wishlist' icon]]>
+    </line>
+    <line>
+      <![CDATA[Wishlist Page: 'My wishlist' is appearing]]>
+    </line>
+    <line>
+      <![CDATA[ASSERT PASSED: element bdi_productAndPrice with text Evening trousersand£30.00 is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[ASSERT PASSED: element bdi_productAndPrice with text Bikiniand£19.00 is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[ASSERT PASSED: element bdi_productAndPrice with text Black trousersand£20.00 is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[ASSERT PASSED: element bdi_productAndPrice with text Modernand£20.00 is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[ASSERT PASSED: element a_addToCardIcon with text Bikini is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[User click on 'Add to Cart' icon for product: Bikini]]>
+    </line>
+    <line>
+      <![CDATA[User click 'Cart' icon]]>
+    </line>
+    <line>
+      <![CDATA[Cart Page: 'Cart' is appearing]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="40634" started-at="2022-01-30T21:01:07Z" finished-at="2022-01-30T21:01:48Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:CodilityTest.runners.TestRunner@64bf3bbf]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="40634" started-at="2022-01-30T21:01:07Z" finished-at="2022-01-30T21:01:48Z">
+      <class name="CodilityTest.runners.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:CodilityTest.runners.TestRunner@64bf3bbf]" name="setUpClass" is-config="true" duration-ms="703" started-at="2022-01-31T02:31:07Z" finished-at="2022-01-31T02:31:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:CodilityTest.runners.TestRunner@64bf3bbf]" name="runScenario" duration-ms="39684" started-at="2022-01-31T02:31:08Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-31T02:31:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the products in the cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Codility Test Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Home Page: 'TESTSCRIPTDEMO – Automation Practice' is appearing]]>
+            </line>
+            <line>
+              <![CDATA[User click 'All Cookies' button]]>
+            </line>
+            <line>
+              <![CDATA[User click on 'Shop' menu option]]>
+            </line>
+            <line>
+              <![CDATA[Shop Page: 'Shop' is appearing]]>
+            </line>
+            <line>
+              <![CDATA[ASSERT PASSED: element div_wishListButton with text Bikini is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[User click on wishlist button for product: 'Bikini']]>
+            </line>
+            <line>
+              <![CDATA[ASSERT PASSED: element span_addedToWishListIcon with text Bikini is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[Bikini added to Wishlist]]>
+            </line>
+            <line>
+              <![CDATA[ASSERT PASSED: element div_wishListButton with text Black trousers is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[User click on wishlist button for product: 'Black trousers']]>
+            </line>
+            <line>
+              <![CDATA[ASSERT PASSED: element span_addedToWishListIcon with text Black trousers is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[Black trousers added to Wishlist]]>
+            </line>
+            <line>
+              <![CDATA[ASSERT PASSED: element div_wishListButton with text Evening trousers is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[User click on wishlist button for product: 'Evening trousers']]>
+            </line>
+            <line>
+              <![CDATA[ASSERT PASSED: element span_addedToWishListIcon with text Evening trousers is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[Evening trousers added to Wishlist]]>
+            </line>
+            <line>
+              <![CDATA[ASSERT PASSED: element div_wishListButton with text Modern is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[User click on wishlist button for product: 'Modern']]>
+            </line>
+            <line>
+              <![CDATA[ASSERT PASSED: element span_addedToWishListIcon with text Modern is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[Modern added to Wishlist]]>
+            </line>
+            <line>
+              <![CDATA[User click 'Wishlist' icon]]>
+            </line>
+            <line>
+              <![CDATA[Wishlist Page: 'My wishlist' is appearing]]>
+            </line>
+            <line>
+              <![CDATA[ASSERT PASSED: element bdi_productAndPrice with text Evening trousersand£30.00 is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[ASSERT PASSED: element bdi_productAndPrice with text Bikiniand£19.00 is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[ASSERT PASSED: element bdi_productAndPrice with text Black trousersand£20.00 is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[ASSERT PASSED: element bdi_productAndPrice with text Modernand£20.00 is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[ASSERT PASSED: element a_addToCardIcon with text Bikini is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[User click on 'Add to Cart' icon for product: Bikini]]>
+            </line>
+            <line>
+              <![CDATA[User click 'Cart' icon]]>
+            </line>
+            <line>
+              <![CDATA[Cart Page: 'Cart' is appearing]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:CodilityTest.runners.TestRunner@64bf3bbf]" name="tearDownClass" is-config="true" duration-ms="221" started-at="2022-01-31T02:31:48Z" finished-at="2022-01-31T02:31:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- CodilityTest.runners.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

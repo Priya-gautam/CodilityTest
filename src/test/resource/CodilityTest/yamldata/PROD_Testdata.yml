@@ -1,0 +1,11 @@
+url: "https://testscriptdemo.com/"
+titleText:
+  homePage: "TESTSCRIPTDEMO – Automation Practice"
+  cartPage: "Cart"
+  wishlistPage: "My wishlist"
+  shopPage: "Shop"
+productsName:
+  product1: "Bikini"
+  product2: "Black trousers"
+  product3: "Evening trousers"
+  product4: "Modern"  
